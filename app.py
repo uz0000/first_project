@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 
-df = pd.read_csv('/Users/uzoma/Desktop/untitled folder/cars_workshop.csv')
+df = pd.read_csv('cars_workshop.csv')
 
 st.header('Market of used cars data')
 st.write('Filter the data below to see the ads by manufacturer')
