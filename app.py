@@ -9,9 +9,9 @@ st.header('Market of used cars data')
 st.write('Filter the data below to see the ads by manufacturer')
 
 #Filling NA values
-df['year_produced'] = df.groupby('model_name').fillna(df['year_produced'].median())
-df['engine_capacity'] = df.groupby('model_name').fillna(df['engine_capacity'].median())
-df['odometer_value'] = df.groupby('model_name').fillna(df['odometer_value'].median())
+df['year_produced'] = df['year_produced'].fillna(df.groupby('model_name')['year_produced'].transform('median'))
+df['engine_capacity'] = df['engine_capacity'].fillna(df.groupby('model_name')['engine_capacity'].transform('median'))
+df['odometer_value'] = df['odometer_value'].fillna(df.groupby('model_name')['odometer_value'].transform('median'))
 
 df = df.drop(df.columns[0], axis=1)
 manufacturer_choice = df['manufacturer_name'].unique()
