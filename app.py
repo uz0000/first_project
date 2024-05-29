@@ -9,8 +9,7 @@ st.header('Market of used cars data')
 st.write('Filter the data below to see the ads by manufacturer')
 
 #Filling NA values
-df['model_year'] = pd.to_numeric(df['model_year'])
-df['model_year'] = df['model_year'].fillna(df['model_year'].median())
+
 df['engine_capacity'] = df['engine_capacity'].fillna(df['engine_capacity'].median())
 df['odometer_value'] = df['odometer_value'].fillna(df['odometer_value'].median())
 
