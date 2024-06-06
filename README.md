@@ -4,4 +4,4 @@
 https://first-project-neyp.onrender.com/
 
 
-The app provides information on different used cars that are available and how their prices varies based on different factors. 
+The app provides information on different used cars that are available and how their prices vary based on different factors. 
